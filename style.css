@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  height: 100%;
+  display: grid;
+
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main-content";
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding-top: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: hsl(201, 78%, 46%);
+  grid-area: sidebar;
+  box-shadow: 4px 0 8px rgba(0, 0, 0, 0.15);
+}
+.header {
+  background-color: rgb(255, 255, 255);
+  grid-area: header;
+}
+.main-content {
+  background-color: rgb(159, 165, 42);
+  grid-area: main-content;
+}
+svg {
+  height: 1.2em;
+  width: 1.2em;
+  fill: rgb(255, 255, 255);
+  display: inline-block;
+}
+.svgtitle {
+  height: 1.5em;
+  width: 1.5em;
+  flex-shrink: 0;
+  margin: -10px;
+}
+.home,
+.profile,
+.messages,
+.history,
+.tasks,
+.communities,
+.settings,
+.support,
+.privacy,
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+
+  gap: 15px;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  padding-bottom: 20px;
+
+  font-size: 1.7em;
+  line-height: 1;
+  align-items: center;
+}
+.first,
+.second {
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.title,
+.first,
+.second {
+  padding-left: 25px;
+}
+.first {
+  margin-bottom: 10px;
+}
+.magnifier,
+.bl {
+  height: 1.2em;
+  width: 1.2em;
+  fill: black;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.search,
+.bell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.upper {
+  display: flex;
+  flex-direction: row;
+
+  align-items: start;
+}
+.lower {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+}
+.name {
+  display: flex;
+  flex-direction: row;
+}
