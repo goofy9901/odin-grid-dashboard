@@ -34,7 +34,7 @@ body {
   grid-area: header;
 }
 .main-content {
-  background-color: rgb(159, 165, 42);
+  background-color: #e2e8f0;
   grid-area: main-content;
 }
 svg {
@@ -100,8 +100,9 @@ svg {
 
 .header {
   display: grid;
-  grid-template-columns: 1;
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, 1fr);
+  box-shadow: 0 10px 0px rgba(0, 0, 0, 0.5);
 }
 
 .search,
@@ -114,6 +115,7 @@ svg {
 .upper {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 
   align-items: start;
 }
@@ -125,4 +127,91 @@ svg {
 .name {
   display: flex;
   flex-direction: row;
+}
+.magnifier,
+.bl {
+  height: 1.7em;
+  width: 1.7em;
+  fill: black;
+}
+.wlf {
+  height: 2.5em;
+  width: 2.5em;
+}
+.input {
+  border: none;
+  outline: none;
+  background-color: #e2e8f0;
+  border-radius: 20px;
+  padding: 8px 16px;
+  width: 600px;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+}
+.search {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  margin-left: 40px;
+}
+.bell {
+  display: flex;
+  margin-right: 50px;
+  margin-top: 15px;
+
+  gap: 50px;
+}
+p {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+
+.lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  margin-left: 40px;
+}
+.wolf {
+  height: 3.2em;
+  width: 3.2em;
+}
+.nick {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+
+  font-size: 1.7em;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 15px;
+  margin-right: 50px;
+  gap: 2em;
+}
+.btn1,
+.btn2,
+.btn3 {
+  height: 2.7em;
+  width: 6.7em;
+  font-weight: bold;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  background-color: hsl(201, 78%, 46%);
+  color: white;
+  cursor: pointer;
 }
