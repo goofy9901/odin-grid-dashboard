@@ -233,7 +233,8 @@ p {
 .card {
   height: 200px;
   width: 370px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+  color: black;
 }
 .right {
   display: grid;
@@ -241,8 +242,9 @@ p {
   align-items: center;
   background-color: hsl(214, 32%, 91%);
 }
-.plate {
-  background-color: rgb(0, 0, 0);
+.rightcard {
+  background-color: rgb(255, 255, 255);
+  color: black;
   height: 280px;
   width: 260px;
   margin-right: 150px;
@@ -268,4 +270,37 @@ p {
   margin-top: 25px;
   font-size: 21px;
   font-weight: 500;
+}
+.ttl {
+  font-size: 18px;
+  font-weight: 500;
+}
+.text {
+  font-size: 15px;
+  font-weight: 100;
+  color: grey;
+}
+.icon {
+  fill: black;
+  height: 25px;
+  width: 25px;
+}
+.icons {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: end;
+}
+.subcard {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 20px 20px;
+}
+.card {
+  border-left: 7px solid rgb(255, 189, 66);
+  outline: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
 }
