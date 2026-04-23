@@ -217,7 +217,7 @@ p {
 }
 .main-content {
   display: grid;
-  grid-template-columns: 2fr 250px;
+  grid-template-columns: 2fr 300px;
 }
 .left {
   background-color: hsl(214, 32%, 91%);
@@ -237,10 +237,16 @@ p {
   color: black;
 }
 .right {
-  display: grid;
-  justify-content: center;
-  align-items: center;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
   background-color: hsl(214, 32%, 91%);
+  margin-right: 30px;
+
+  padding: 0 15px;
+  overflow-y: auto;
+
+  align-items: stretch;
 }
 .rightcard {
   background-color: rgb(255, 255, 255);
@@ -303,4 +309,115 @@ p {
   outline: none;
   border-radius: 8px;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+.fTitle,
+.sTitle,
+.tTitle {
+  font-size: 15px;
+}
+.fText,
+.sText,
+.tText {
+  font-size: 10px;
+}
+.rightcard1 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+
+  gap: 10px;
+}
+
+.rightcard2 {
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  min-height: 150px;
+  height: 315px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+  padding: 15px;
+  margin-bottom: 25px;
+}
+.section-title2,
+.section-title3 {
+  margin-top: 25px;
+  font-size: 21px;
+  font-weight: 500;
+  align-self: flex-start;
+}
+
+hr {
+  width: 100%;
+  border: none;
+  border-top: 1px solid #e2e8f0;
+}
+.last {
+  fill: black;
+  height: 3.5em;
+  width: 3.5em;
+}
+.lasticon1 p {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1a202c;
+  line-height: 1.4;
+}
+.lasticon1,
+.lasticon2,
+.lasticon3,
+.lasticon4 {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #1a202c;
+  line-height: 1.4;
+}
+.lasticon1,
+.lasticon2,
+.lasticon3,
+.lasticon4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+.fTitle,
+.sTitle,
+.tTitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.fText,
+.sText,
+.tText {
+  font-size: 11px;
+  font-weight: 400;
+  color: grey;
+  line-height: 1.4;
+}
+
+.rightcard2 {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+.right {
+  margin-top: 10px;
+}
+.section-title2,
+.section-title3 {
+  padding-bottom: 10px;
 }
